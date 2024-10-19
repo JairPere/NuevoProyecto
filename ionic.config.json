@@ -1,0 +1,7 @@
+{
+  "name": "software-store",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
