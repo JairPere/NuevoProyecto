@@ -1,0 +1,57 @@
+ion-header {
+  background-color: #4a90e2; /* Azul claro */
+  color: white;
+
+  ion-toolbar {
+    --background: transparent; /* Hacer transparente el fondo de la barra */
+  }
+}
+
+ion-card {
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin: 10px;
+
+  ion-card-header {
+    background-color: #4a90e2; /* Mismo color que el header */
+    color: white;
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+    padding: 10px;
+  }
+
+  ion-card-content {
+    padding: 15px;
+  }
+}
+
+ion-list {
+  margin: 0;
+}
+
+ion-item {
+  border-bottom: 1px solid #e0e0e0; /* Línea divisoria */
+  padding: 10px 15px;
+
+  &:last-child {
+    border-bottom: none; /* Quitar la línea divisoria del último ítem */
+  }
+}
+
+ion-button {
+  border-radius: 20px; /* Bordes redondeados en los botones */
+  &.danger {
+    background-color: #e94e77; /* Color rojo para eliminar */
+    color: white;
+  }
+
+  &:hover {
+    filter: brightness(0.9); /* Efecto de hover */
+  }
+}
+
+ion-input {
+  border-radius: 5px; /* Bordes redondeados para el input */
+  --padding-start: 10px; /* Espaciado interno */
+  --padding-end: 10px;
+}

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- Botón o flecha para regresar -->
+      <ion-button routerLink="/home">
+        <ion-icon name="arrow-back-outline"></ion-icon> <!-- Icono de flecha -->
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input [(ngModel)]="email" type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="password" type="password"></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" (click)="login()">Iniciar Sesión</ion-button>
+        <ion-button expand="full" fill="outline" routerLink="/register">Crear Cuenta</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
